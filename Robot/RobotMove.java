@@ -21,10 +21,11 @@ public class RobotMove {
 	 */
 	public void start() {
 		String line;
-		while(true) {
+		while(scanner.hasNextLine()) {
 			line = scanner.nextLine();
 			respond(line);
 		}
+		scanner.close();
 	}
 	
 	/**
